@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-paper font-sans text-ink antialiased; }
+  a:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible { @apply outline outline-[3px] outline-offset-2 outline-lane; }
+}
+@layer components {
+  .btn { @apply inline-flex items-center justify-center rounded-xl bg-lane px-6 py-3.5 font-bold text-white shadow-lg shadow-lane/30 transition hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0; }
+  .btn-ghost { @apply bg-white text-ink shadow-none ring-1 ring-ink/15 hover:bg-ink/5; }
+  .field { @apply w-full rounded-xl border border-ink/15 bg-white px-4 py-3 font-semibold text-ink; }
+  .reveal { @apply transition-all duration-700 ease-out; }
+  .reveal-hidden { @apply translate-y-8 opacity-0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
