@@ -5,5 +5,5 @@ npm run dev      # development
 npm run build    # builds AND pre-renders static HTML into dist/
 npm run preview
 Deploy the `dist/` folder to Netlify, Vercel, Cloudflare Pages or any static host.
-Before launch: replace https://www.riobikerental.in/ in index.html, robots.txt and sitemap.xml with your real domain.
+Before launch: replace https://rio-bike-rental.vercel.app/ in index.html, robots.txt and sitemap.xml with your real domain.
 # rio-bike-rental
