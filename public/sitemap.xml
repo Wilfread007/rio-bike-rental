@@ -1,4 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rio-bike-rental.vercel.app/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- 1. Home / Main Landing Page -->
+  <url>
+    <loc>https://rio-bike-rental.vercel.app/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-shop-nagercoil.png</image:loc>
+      <image:title>Rio Bike Rental Storefront in Kottar Nagercoil with Helmets and Fleet</image:title>
+      <image:caption>Official storefront and garage of Rio Bike Rental located at Muppidari Amman Kovil, Cholavar St, opposite Railway Road, Kottar, Nagercoil</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-kottar-nagercoil.jpg</image:loc>
+      <image:title>Rio Bike Rental Entrance and Scooter Fleet in Kottar Nagercoil</image:title>
+      <image:caption>Entrance of Rio Bike Rental in Kottar, Nagercoil with rental Honda Activa scooters and Kanyakumari tour banner</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/bike-rental-nagercoil.jpg</image:loc>
+      <image:title>Royal Enfield Bullet and Commuter Motorcycles for Rent in Nagercoil</image:title>
+      <image:caption>Rental Royal Enfield Bullet motorcycle and bikes ready for Kanyakumari highway tour from Rio Bike Rental, Nagercoil</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/scooter-rental-nagercoil.jpg</image:loc>
+      <image:title>Scooter Rental in Nagercoil - Automatic Honda Activa</image:title>
+      <image:caption>Rental Honda Activa automatic gearless scooters at Rio Bike Rental shop in Kottar, Nagercoil</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 2. Scooter Rental in Nagercoil -->
+  <url>
+    <loc>https://rio-bike-rental.vercel.app/scooter-rental-nagercoil</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/scooter-rental-nagercoil.jpg</image:loc>
+      <image:title>Automatic Scooter Rental in Nagercoil - Honda Activa</image:title>
+      <image:caption>Clean and fuel-efficient Honda Activa gearless scooty available for rent in Kottar, Nagercoil</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-shop-nagercoil.png</image:loc>
+      <image:title>Rio Bike Rental Scooter Pickup Shop Kottar Nagercoil</image:title>
+      <image:caption>Rio Bike Rental shopfront in Kottar near Railway Road where customers collect rental scooters and helmets</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 3. Royal Enfield Bullet Rental in Nagercoil -->
+  <url>
+    <loc>https://rio-bike-rental.vercel.app/bullet-rental-nagercoil</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/bullet-rental-nagercoil.jpg</image:loc>
+      <image:title>Royal Enfield Bullet Rental in Nagercoil for Kanyakumari Trip</image:title>
+      <image:caption>Red Royal Enfield Bullet 350cc cruiser motorcycle ready for Kanyakumari sunrise ride from Rio Bike Rental</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-shop-nagercoil.png</image:loc>
+      <image:title>Rio Bike Rental Touring Motorcycle Garage Kottar</image:title>
+      <image:caption>Garage and fleet of touring motorcycles at Rio Bike Rental in Kottar, Nagercoil</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 4. Motorcycle & Commuter Bike Rental in Nagercoil -->
+  <url>
+    <loc>https://rio-bike-rental.vercel.app/bike-rental-nagercoil</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/bike-rental-nagercoil.jpg</image:loc>
+      <image:title>Commuter Bike Rental in Nagercoil - 55-65 kmpl Mileage</image:title>
+      <image:caption>Reliable geared commuter motorcycles for daily hire and field travel in Nagercoil</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-shop-nagercoil.png</image:loc>
+      <image:title>Rio Bike Rental Shop in Nagercoil</image:title>
+      <image:caption>Front view of Rio Bike Rental shop with serviced commuter bikes and helmets ready</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 5. Bike Rental Near Nagercoil Railway Station (NCJ) -->
+  <url>
+    <loc>https://rio-bike-rental.vercel.app/bike-rental-near-nagercoil-railway-station</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-shop-nagercoil.png</image:loc>
+      <image:title>Bike Rental 2 Minutes from Nagercoil Junction Railway Station</image:title>
+      <image:caption>Rio Bike Rental in Kottar opposite Railway Road, just 2 minutes from Nagercoil Junction (NCJ) exit</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-kottar-nagercoil.jpg</image:loc>
+      <image:title>Convenient Railway Passenger Pickup at Rio Bike Rental</image:title>
+      <image:caption>Quick walk-in pickup for passengers arriving by train at Nagercoil Junction</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 6. Bike Rental for Kanyakumari Trip from Nagercoil -->
+  <url>
+    <loc>https://rio-bike-rental.vercel.app/kanyakumari-bike-rental</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/bullet-rental-nagercoil.jpg</image:loc>
+      <image:title>Bike Rental for Kanyakumari Trip via NH-66</image:title>
+      <image:caption>Cruise 20 km to Kanyakumari sunrise point on a Royal Enfield Bullet from Rio Bike Rental Nagercoil</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-kottar-nagercoil.jpg</image:loc>
+      <image:title>Kanyakumari Road Trip Two-Wheeler Rental</image:title>
+      <image:caption>Two-wheelers ready for coastal road trips from Kottar Nagercoil to Kanyakumari</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 7. Bike Rental in Kottar Nagercoil -->
+  <url>
+    <loc>https://rio-bike-rental.vercel.app/kottar-bike-rental</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-shop-nagercoil.png</image:loc>
+      <image:title>Rio Bike Rental Kottar Nagercoil Physical Store</image:title>
+      <image:caption>Rio Bike Rental shop located at Muppidari Amman Kovil, Cholavar St, opposite Railway Road, Kottar</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/rio-bike-rental-kottar-nagercoil.jpg</image:loc>
+      <image:title>Kottar Nagercoil Bike Hire Shopfront</image:title>
+      <image:caption>Local Kottar bike hire shop with friendly local support and immediate vehicle handover</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 8. Places to Visit from Nagercoil by Bike -->
+  <url>
+    <loc>https://rio-bike-rental.vercel.app/places-to-visit-from-nagercoil</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/bullet-rental-nagercoil.jpg</image:loc>
+      <image:title>Sightseeing Around Nagercoil by Bike</image:title>
+      <image:caption>Explore Suchindram, Muttom Beach, and Thirparappu Falls by rental two-wheeler</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rio-bike-rental.vercel.app/images/scooter-rental-nagercoil.jpg</image:loc>
+      <image:title>Kanyakumari District Sightseeing Scooter Hire</image:title>
+      <image:caption>Automatic scooters for easy touring to beaches, waterfalls, and heritage palaces from Nagercoil</image:caption>
+    </image:image>
+  </url>
 </urlset>
