@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BUSINESS as B, FLEET, STEPS, PLACES, FAQ, GALLERY, STATIC_PAGES, REVIEWS, type Vehicle } from "./data";
+import { BUSINESS as B, FLEET, STEPS, PLACES, FAQ, GALLERY, STATIC_PAGES, type Vehicle } from "./data";
 import Reveal from "./Reveal";
 
 const TRUST = [
@@ -85,15 +85,16 @@ export default function App({ currentPath = "/" }: { currentPath?: string }) {
   return (
     <div className="min-h-screen bg-paper font-sans text-ink selection:bg-lane selection:text-white">
       {/* Top Notification Announcement Bar */}
-      <div className="bg-ink px-4 py-2 text-center text-xs font-semibold text-white/90 sm:text-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-center gap-3">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-lane/20 px-2 py-0.5 text-xs font-bold text-lane">
+      <div className="bg-ink px-3 py-1.5 text-center text-xs font-semibold text-white/90 sm:px-4 sm:py-2 sm:text-sm">
+        <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 sm:gap-3 flex-wrap sm:flex-nowrap">
+          <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-lane/20 px-2.5 py-0.5 text-[11px] font-extrabold text-lane sm:text-xs whitespace-nowrap">
             <span className="h-1.5 w-1.5 rounded-full bg-lane animate-ping" />
             Open 24 Hours
           </span>
-          <span>
-            Bike &amp; Scooter Rental in Kottar, Nagercoil • 24/7 Pickup &amp; Drop • Near Railway Station • Call / WhatsApp:{" "}
-            <a href={B.tel} className="font-extrabold text-lane underline underline-offset-2">
+          <span className="text-[11px] sm:text-xs leading-snug">
+            <span className="hidden md:inline">Bike &amp; Scooter Rental in Kottar, Nagercoil • 24/7 Pickup &amp; Drop • </span>
+            Near Railway Station • Call / WhatsApp:{" "}
+            <a href={B.tel} className="font-extrabold text-lane underline underline-offset-2 whitespace-nowrap">
               {B.phone}
             </a>
           </span>
@@ -102,14 +103,22 @@ export default function App({ currentPath = "/" }: { currentPath?: string }) {
 
       {/* Main Glassmorphic Header */}
       <header className="sticky top-0 z-40 border-b border-ink/10 bg-white/95 backdrop-blur-md shadow-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
-          <a href="/" className="flex items-center gap-2.5 text-xl font-extrabold tracking-tight text-ink" aria-label="Rio Bike Rental Home">
-            <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-lane to-[#e04825] text-lg font-black text-white shadow-md shadow-lane/30">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-5 sm:py-3.5">
+          <a
+            href="/"
+            className="flex items-center gap-2 sm:gap-2.5 shrink-0"
+            aria-label="Rio Bike Rental Home"
+          >
+            <div className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-xl bg-gradient-to-br from-lane to-[#e04825] text-base sm:text-lg font-black text-white shadow-md shadow-lane/30 shrink-0">
               R
             </div>
-            <div>
-              <span className="text-lane">Rio</span> Bike Rental
-              <span className="block text-[10px] font-bold uppercase tracking-wider text-sea">Kottar • Nagercoil</span>
+            <div className="leading-tight shrink-0">
+              <div className="text-base sm:text-xl font-extrabold tracking-tight text-ink whitespace-nowrap">
+                <span className="text-lane">Rio</span> Bike Rental
+              </div>
+              <span className="block text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-sea whitespace-nowrap">
+                Kottar • Nagercoil
+              </span>
             </div>
           </a>
 
@@ -117,7 +126,6 @@ export default function App({ currentPath = "/" }: { currentPath?: string }) {
           <nav aria-label="Main Navigation" className="hidden items-center gap-6 text-sm font-bold text-ink/75 md:flex">
             <a href="#fleet" className="transition hover:text-lane">Fleet</a>
             <a href="#gallery" className="transition hover:text-lane">Shop Photos</a>
-            <a href="#reviews" className="transition hover:text-lane">Google Reviews</a>
             <a href="#how" className="transition hover:text-lane">How to Rent</a>
             <a href="#rides" className="transition hover:text-lane">Kanyakumari Trip</a>
             <a href="#location" className="transition hover:text-lane">Kottar Location</a>
@@ -125,26 +133,32 @@ export default function App({ currentPath = "/" }: { currentPath?: string }) {
           </nav>
 
           {/* CTA Header Actions */}
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2 shrink-0">
             <a
               href={B.tel}
-              className="btn !px-4 !py-2 text-sm shadow-md transition hover:scale-105"
+              className="inline-flex items-center gap-1.5 rounded-xl bg-lane px-3 py-1.5 text-xs font-extrabold text-white shadow-sm shadow-lane/30 transition hover:bg-lane-dark active:scale-95 sm:px-4 sm:py-2 sm:text-sm whitespace-nowrap"
               aria-label={`Call Rio Bike Rental at ${B.phone}`}
             >
-              <span className="hidden sm:inline">Call Now: </span>{B.phone}
+              <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span className="sm:hidden">Call</span>
+              <span className="hidden sm:inline">Call: {B.phone}</span>
             </a>
           </div>
         </div>
 
         {/* Quick SEO Route Tabs for Navigation & Deep Crawling */}
-        <div className="border-t border-ink/5 bg-paper/90 px-5 py-2 overflow-x-auto no-scrollbar">
+        <div className="border-t border-ink/5 bg-paper/90 px-3 sm:px-5 py-2 overflow-x-auto no-scrollbar">
           <div className="mx-auto flex max-w-6xl items-center gap-2 text-xs font-bold text-ink/70">
-            <span className="shrink-0 text-ink/50 uppercase tracking-wider text-[11px]">Rental Services:</span>
+            <span className="shrink-0 text-ink/50 uppercase tracking-wider text-[10px] sm:text-[11px] font-extrabold">
+              Services:
+            </span>
             {STATIC_PAGES.map((p) => (
               <a
                 key={p.slug}
                 href={p.slug}
-                className={`shrink-0 rounded-lg px-3 py-1 transition ${
+                className={`shrink-0 rounded-lg px-2.5 py-1 text-xs transition ${
                   clientPath === p.slug
                     ? "bg-ink text-white shadow-sm ring-1 ring-ink"
                     : "bg-white text-ink/80 ring-1 ring-ink/10 hover:bg-lane hover:text-white"
@@ -174,9 +188,9 @@ export default function App({ currentPath = "/" }: { currentPath?: string }) {
 
             <div className="grid items-center gap-10 md:grid-cols-12">
               <div className="md:col-span-7">
-                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-sea shadow-sm ring-1 ring-sea/20">
-                  <span className="inline-block h-2 w-2 rounded-full bg-sea animate-ping" />
-                  {pageMeta.badge} • Kottar, Nagercoil
+                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wider text-sea shadow-sm ring-1 ring-sea/20 max-w-full">
+                  <span className="inline-block h-2 w-2 shrink-0 rounded-full bg-sea animate-ping" />
+                  <span className="truncate">{pageMeta.badge}</span>
                 </div>
 
                 <h1 className="text-3xl font-extrabold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-6xl">
@@ -214,24 +228,10 @@ export default function App({ currentPath = "/" }: { currentPath?: string }) {
 
                 {/* Verified Trust Badges */}
                 <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  <a
-                    href="#reviews"
-                    className="group rounded-xl bg-white/95 p-3 shadow-sm ring-1 ring-ink/10 transition hover:-translate-y-1 hover:shadow-md hover:ring-lane/40 block cursor-pointer"
-                    aria-label="View Google Reviews for Rio Bike Rental (4.9 stars, 87+ reviews)"
-                  >
-                    <div className="flex items-center justify-between">
-                      <p className="text-lg font-black text-lane flex items-center gap-1">
-                        4.9 ★
-                      </p>
-                      <span className="rounded bg-lane/10 px-1.5 py-0.5 text-[10px] font-extrabold text-lane">
-                        87+
-                      </span>
-                    </div>
-                    <p className="text-[11px] font-bold text-ink/70 group-hover:text-lane transition flex items-center justify-between mt-0.5">
-                      <span>Google Reviews</span>
-                      <span className="text-[10px] text-lane">&darr;</span>
-                    </p>
-                  </a>
+                  <div className="rounded-xl bg-white/90 p-3 shadow-sm ring-1 ring-ink/5">
+                    <p className="text-lg font-black text-lane">24/7</p>
+                    <p className="text-[11px] font-bold text-ink/70">Open Everyday</p>
+                  </div>
                   <div className="rounded-xl bg-white/90 p-3 shadow-sm ring-1 ring-ink/5">
                     <p className="text-lg font-black text-sea">2 Mins</p>
                     <p className="text-[11px] font-bold text-ink/70">From Railway Jn</p>
@@ -683,154 +683,6 @@ export default function App({ currentPath = "/" }: { currentPath?: string }) {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Google Reviews & Customer Testimonials Section */}
-        <section id="reviews" className="bg-gradient-to-b from-white via-paper to-white px-5 py-20 border-t border-ink/5">
-          <div className="mx-auto max-w-6xl">
-            <Reveal>
-              <div className="text-center">
-                <div className="inline-flex items-center gap-2 rounded-full bg-amber-500/10 px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-amber-800 ring-1 ring-amber-500/20">
-                  <span className="flex text-amber-500">★★★★★</span> Google Verified Reviews
-                </div>
-                <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
-                  What Riders Say About Rio Bike Rental
-                </h2>
-                <p className="mx-auto mt-2 max-w-2xl text-sm text-ink/70 sm:text-base">
-                  Rated <strong className="text-ink">4.9 out of 5 stars</strong> by 87+ verified riders on Google Maps. Genuine experiences from train travelers arriving at Nagercoil Junction, vacationers, and locals.
-                </p>
-              </div>
-            </Reveal>
-
-            {/* Google Rating Summary Banner */}
-            <Reveal delay={100}>
-              <div className="mt-10 rounded-3xl bg-white p-6 sm:p-8 shadow-sm ring-1 ring-ink/10">
-                <div className="grid gap-6 md:grid-cols-12 items-center">
-                  {/* Left: Overall Score */}
-                  <div className="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left border-b md:border-b-0 md:border-r border-ink/10 pb-6 md:pb-0 md:pr-6">
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-5xl font-black text-ink">4.9</span>
-                      <span className="text-xl font-bold text-ink/50">/ 5.0</span>
-                    </div>
-                    <div className="mt-2 flex items-center gap-1 text-2xl text-amber-400">
-                      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                    </div>
-                    <p className="mt-2 text-xs font-bold text-ink/70">
-                      Based on <strong>87+ Google Reviews</strong>
-                    </p>
-                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-extrabold text-emerald-700 ring-1 ring-emerald-600/20">
-                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" /> 100% Real Customer Feedback
-                    </div>
-                  </div>
-
-                  {/* Middle: Rating Breakdown Bars */}
-                  <div className="md:col-span-5 space-y-2.5">
-                    <div className="flex items-center gap-3 text-xs font-bold text-ink/75">
-                      <span className="w-12">5 stars</span>
-                      <div className="h-2 flex-1 rounded-full bg-paper overflow-hidden">
-                        <div className="h-full rounded-full bg-amber-400" style={{ width: "94%" }} />
-                      </div>
-                      <span className="w-8 text-right text-ink/50">94%</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-xs font-bold text-ink/75">
-                      <span className="w-12">4 stars</span>
-                      <div className="h-2 flex-1 rounded-full bg-paper overflow-hidden">
-                        <div className="h-full rounded-full bg-amber-400" style={{ width: "6%" }} />
-                      </div>
-                      <span className="w-8 text-right text-ink/50">6%</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-xs font-bold text-ink/75">
-                      <span className="w-12">3 stars</span>
-                      <div className="h-2 flex-1 rounded-full bg-paper overflow-hidden">
-                        <div className="h-full rounded-full bg-amber-400" style={{ width: "0%" }} />
-                      </div>
-                      <span className="w-8 text-right text-ink/50">0%</span>
-                    </div>
-                  </div>
-
-                  {/* Right: Google Actions */}
-                  <div className="md:col-span-3 flex flex-col gap-2.5">
-                    <a
-                      href={B.googleReviewsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn !py-2.5 text-xs sm:text-sm font-bold shadow-md hover:scale-105 transition flex items-center justify-center gap-2"
-                      aria-label="View Rio Bike Rental reviews on Google Maps"
-                    >
-                      <span className="text-white font-black text-sm">G</span>
-                      Read on Google Maps
-                    </a>
-                    <a
-                      href={B.googleReviewsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-ghost !py-2.5 text-xs font-bold hover:bg-paper transition text-center"
-                      aria-label="Write a review for Rio Bike Rental on Google Maps"
-                    >
-                      ✍️ Write a Google Review
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-
-            {/* Verified Google Reviews Grid */}
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
-              {REVIEWS.map((rev, idx) => (
-                <Reveal key={rev.id} delay={idx * 80}>
-                  <div className="flex h-full flex-col justify-between rounded-3xl bg-white p-6 shadow-sm ring-1 ring-ink/10 transition hover:-translate-y-1 hover:shadow-xl">
-                    <div>
-                      {/* Card Header: Avatar & Verified Google Badge */}
-                      <div className="flex items-center justify-between gap-3">
-                        <div className="flex items-center gap-3">
-                          <div className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-lane to-amber-500 font-extrabold text-white text-xs shadow-sm">
-                            {rev.initials}
-                          </div>
-                          <div>
-                            <p className="font-extrabold text-sm text-ink leading-tight">{rev.author}</p>
-                            <p className="text-[11px] text-ink/60 font-semibold">{rev.location}</p>
-                          </div>
-                        </div>
-                        <span className="rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-bold text-blue-700 ring-1 ring-blue-600/20 flex items-center gap-1">
-                          <span className="text-[#4285F4] font-black">G</span> Verified
-                        </span>
-                      </div>
-
-                      {/* Stars & Relative Date */}
-                      <div className="mt-3 flex items-center justify-between">
-                        <div className="flex text-amber-400 text-sm tracking-wider">
-                          {"★".repeat(rev.rating)}
-                        </div>
-                        <span className="text-[11px] font-semibold text-ink/40">{rev.relativeTime}</span>
-                      </div>
-
-                      {/* Rented Vehicle Pill */}
-                      <div className="mt-2.5 inline-block rounded-md bg-paper px-2 py-0.5 text-[10px] font-bold text-sea">
-                        Rented: {rev.vehicle}
-                      </div>
-
-                      {/* Review Text */}
-                      <p className="mt-3 text-xs leading-relaxed text-ink/80">
-                        &ldquo;{rev.text}&rdquo;
-                      </p>
-                    </div>
-
-                    <div className="mt-4 pt-3 border-t border-ink/5 flex items-center justify-between text-[11px] text-ink/50">
-                      <span>Google Review</span>
-                      <a
-                        href={B.googleReviewsUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-lane font-bold hover:underline"
-                      >
-                        Verify on Google &rarr;
-                      </a>
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
             </div>
           </div>
         </section>

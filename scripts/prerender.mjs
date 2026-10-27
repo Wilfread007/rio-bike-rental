@@ -73,6 +73,7 @@ for (const p of PAGES) {
 
   const appHtml = render(p.slug);
   let html = template
+    .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
     .replace("<!--app-html-->", appHtml)
     .replace(/<title>.*?<\/title>/, `<title>${p.title}</title>`)
     .replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${p.description}" />`)
