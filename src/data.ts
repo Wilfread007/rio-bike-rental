@@ -8,101 +8,10 @@ export const BUSINESS = {
   address: "Muppidari Amman Kovil, Cholavar St, opposite Railway Road, Kottar, Nagercoil, Tamil Nadu 629002",
   landmark: "Opposite Railway Road near Muppidari Amman Kovil (2 mins from Nagercoil Junction Railway Station)",
   map: "https://www.google.com/maps/search/?api=1&query=Rio+Bike+Rental+Kottar+Nagercoil",
-  googleReviewsUrl: "https://www.google.com/maps/search/?api=1&query=Rio+Bike+Rental+Kottar+Nagercoil",
-  rating: "4.9",
-  reviewCount: 87,
   domain: "https://rio-bike-rental.vercel.app",
   hours: "Open 24 Hours (24/7 Everyday)",
   openStatus: "Open 24 Hours • 24/7 Pickup & Drop",
 };
-
-export interface CustomerReview {
-  id: string;
-  author: string;
-  location: string;
-  rating: number;
-  date: string;
-  relativeTime: string;
-  vehicle: string;
-  text: string;
-  initials: string;
-  verified: boolean;
-}
-
-export const REVIEWS: CustomerReview[] = [
-  {
-    id: "rev-1",
-    author: "Karthik Raja",
-    initials: "KR",
-    location: "Chennai (Train Arrival)",
-    rating: 5,
-    date: "2024-10-14",
-    relativeTime: "2 weeks ago",
-    vehicle: "Honda Activa 6G",
-    text: "Arrived at Nagercoil Junction at 5:00 AM on the Ananthapuri Express. Rio Bike Rental being open 24 hours was a lifesaver! Called them and within 5 minutes I had a clean Honda Activa with helmets. Seamless pickup just 2 mins walk from the station exit.",
-    verified: true,
-  },
-  {
-    id: "rev-2",
-    author: "Anand Sundaram",
-    initials: "AS",
-    location: "Bengaluru",
-    rating: 5,
-    date: "2024-09-28",
-    relativeTime: "1 month ago",
-    vehicle: "Royal Enfield Bullet 350",
-    text: "Rented a Royal Enfield Bullet 350 for a 2-day coastal tour to Kanyakumari sunrise, Muttom beach, and Padmanabhapuram palace. Engine was in superb condition, smooth highway ride, and the owner was very polite and helpful. Security deposit refunded on the spot.",
-    verified: true,
-  },
-  {
-    id: "rev-3",
-    author: "Praveen Kumar",
-    initials: "PK",
-    location: "Nagercoil Local",
-    rating: 5,
-    date: "2024-09-15",
-    relativeTime: "1 month ago",
-    vehicle: "Commuter Motorcycle 125cc",
-    text: "Needed a bike for 4 days for field survey work across Kanyakumari district. Got a high-mileage commuter bike that gave 60+ km/l. Transparent pricing, zero hidden charges, and hassle-free paperwork. Best two-wheeler rental shop in Kottar!",
-    verified: true,
-  },
-  {
-    id: "rev-4",
-    author: "Sneha & Rohit",
-    initials: "SR",
-    location: "Coimbatore (Couple Trip)",
-    rating: 5,
-    date: "2024-08-20",
-    relativeTime: "2 months ago",
-    vehicle: "Honda Activa Automatic",
-    text: "We booked via WhatsApp before boarding our train. The scooter was clean and ready when we reached Kottar opposite Railway Road. Fresh sanitized helmets provided and great fuel economy. Exploring Suchindram temple and Kanyakumari at our own pace was memorable.",
-    verified: true,
-  },
-  {
-    id: "rev-5",
-    author: "Vigneshwaran M",
-    initials: "VM",
-    location: "Madurai",
-    rating: 5,
-    date: "2024-08-05",
-    relativeTime: "2 months ago",
-    vehicle: "Honda Activa",
-    text: "24/7 service is 100% genuine. Returned the bike at 11:30 PM for our return train to Madurai. The shop owner was there to inspect and handed back the security deposit immediately with a smile. Highly recommend Rio Bike Rental to anyone visiting Nagercoil.",
-    verified: true,
-  },
-  {
-    id: "rev-6",
-    author: "Deepak S",
-    initials: "DS",
-    location: "Kochi, Kerala",
-    rating: 5,
-    date: "2024-07-18",
-    relativeTime: "3 months ago",
-    vehicle: "Royal Enfield Bullet 350",
-    text: "Traveled from Kerala for a weekend road trip. Rented a Bullet 350cc. Vehicle condition was top notch, smooth clutch and brakes. Very reasonable daily charges with no middleman commission. 5 stars all the way!",
-    verified: true,
-  },
-];
 
 export interface Vehicle {
   id: string;
