@@ -36,7 +36,10 @@
   <meta name="theme-color" content="#0b1f3a" />
 
   <!-- Favicon & Icons -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+  <link rel="apple-touch-icon" href="/favicon-192x192.png" />
   
   <!-- Performance Preconnect & Preload -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -99,28 +102,40 @@
             {
               "@type": "Offer",
               "itemOffered": {
-                "@type": "Product",
+                "@type": "Service",
                 "name": "Honda Activa Scooter Rental in Nagercoil",
+                "serviceType": "Scooter Rental",
                 "description": "Automatic Honda Activa gearless scooty hire with complimentary helmets for city travel, shopping, and sightseeing.",
-                "image": "https://rio-bike-rental.vercel.app/images/scooter-rental-nagercoil.jpg"
+                "image": "https://rio-bike-rental.vercel.app/images/scooter-rental-nagercoil.jpg",
+                "provider": {
+                  "@id": "https://rio-bike-rental.vercel.app/#localbusiness"
+                }
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
-                "@type": "Product",
+                "@type": "Service",
                 "name": "Royal Enfield Bullet Rental in Nagercoil",
+                "serviceType": "Motorcycle Rental",
                 "description": "350cc Royal Enfield Bullet motorcycle hire for highway cruising, coastal drives, and Kanyakumari road trips.",
-                "image": "https://rio-bike-rental.vercel.app/images/bullet-rental-nagercoil.jpg"
+                "image": "https://rio-bike-rental.vercel.app/images/bullet-rental-nagercoil.jpg",
+                "provider": {
+                  "@id": "https://rio-bike-rental.vercel.app/#localbusiness"
+                }
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
-                "@type": "Product",
+                "@type": "Service",
                 "name": "Commuter Motorcycle Rental in Nagercoil",
+                "serviceType": "Bike Rental",
                 "description": "High-mileage (55-65 km/l) 110cc to 150cc commuter motorcycle rental for daily commuting and budget travel.",
-                "image": "https://rio-bike-rental.vercel.app/images/bike-rental-nagercoil.jpg"
+                "image": "https://rio-bike-rental.vercel.app/images/bike-rental-nagercoil.jpg",
+                "provider": {
+                  "@id": "https://rio-bike-rental.vercel.app/#localbusiness"
+                }
               }
             }
           ]
@@ -166,6 +181,11 @@
         "@id": "https://rio-bike-rental.vercel.app/#website",
         "url": "https://rio-bike-rental.vercel.app/",
         "name": "Rio Bike Rental",
+        "alternateName": [
+          "Rio Bike Rental Nagercoil",
+          "Rio Two Wheeler Rental",
+          "Rio Bike Rentals"
+        ],
         "description": "Bike and Scooter Rental in Kottar, Nagercoil"
       },
       {
